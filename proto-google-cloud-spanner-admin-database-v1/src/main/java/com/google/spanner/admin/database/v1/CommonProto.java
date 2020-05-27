@@ -31,6 +31,10 @@ public final class CommonProto {
       internal_static_google_spanner_admin_database_v1_OperationProgress_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_spanner_admin_database_v1_OperationProgress_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_spanner_admin_database_v1_EncryptionConfig_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_spanner_admin_database_v1_EncryptionConfig_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
     return descriptor;
@@ -47,13 +51,14 @@ public final class CommonProto {
           + "annotations.proto\"\213\001\n\021OperationProgress\022"
           + "\030\n\020progress_percent\030\001 \001(\005\022.\n\nstart_time\030"
           + "\002 \001(\0132\032.google.protobuf.Timestamp\022,\n\010end"
-          + "_time\030\003 \001(\0132\032.google.protobuf.TimestampB"
-          + "\321\001\n$com.google.spanner.admin.database.v1"
-          + "B\013CommonProtoP\001ZHgoogle.golang.org/genpr"
-          + "oto/googleapis/spanner/admin/database/v1"
-          + ";database\252\002&Google.Cloud.Spanner.Admin.D"
-          + "atabase.V1\312\002&Google\\Cloud\\Spanner\\Admin\\"
-          + "Database\\V1b\006proto3"
+          + "_time\030\003 \001(\0132\032.google.protobuf.Timestamp\""
+          + "(\n\020EncryptionConfig\022\024\n\007kms_key\030\001 \001(\tB\003\340A"
+          + "\002B\321\001\n$com.google.spanner.admin.database."
+          + "v1B\013CommonProtoP\001ZHgoogle.golang.org/gen"
+          + "proto/googleapis/spanner/admin/database/"
+          + "v1;database\252\002&Google.Cloud.Spanner.Admin"
+          + ".Database.V1\312\002&Google\\Cloud\\Spanner\\Admi"
+          + "n\\Database\\V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
@@ -71,6 +76,19 @@ public final class CommonProto {
             new java.lang.String[] {
               "ProgressPercent", "StartTime", "EndTime",
             });
+    internal_static_google_spanner_admin_database_v1_EncryptionConfig_descriptor =
+        getDescriptor().getMessageTypes().get(1);
+    internal_static_google_spanner_admin_database_v1_EncryptionConfig_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_spanner_admin_database_v1_EncryptionConfig_descriptor,
+            new java.lang.String[] {
+              "KmsKey",
+            });
+    com.google.protobuf.ExtensionRegistry registry =
+        com.google.protobuf.ExtensionRegistry.newInstance();
+    registry.add(com.google.api.FieldBehaviorProto.fieldBehavior);
+    com.google.protobuf.Descriptors.FileDescriptor.internalUpdateFileDescriptor(
+        descriptor, registry);
     com.google.api.FieldBehaviorProto.getDescriptor();
     com.google.protobuf.TimestampProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
